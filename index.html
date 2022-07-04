@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<title>Jogo da Forca</title>
+	</head>
+	<body>
+		<!-- Tela 1 -->
+		<h1>
+			<img src="img/Vector@2x.svg" alt="Logo da Alura" class="logo-alura">
+		</h1>
+		<div id="tela1">
+			<section class="btns-inicio">
+				<button class="btn-inicio-jogo" onclick="alterarParaTela3()">Começar a jogar</button>
+				<button class="btn-inicio-inserir" onclick="alterarParaTela2()">Adicionar nova palavra</button>
+			</section>
+			<footer>
+				<div class="rodape-author-email">
+					<p><strong class="author">Author: </strong> <span class="nome-rodape">Rodolfo Aparecido Mendonça</span> | <strong class="email-rodape">Email: </strong> <span class="valor-email-rodape">rodolfo.aparecidomend@gmail.com</span></p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Tela 2 -->
+		<div id="tela2" class="invisivel">
+			<section class="campo1-input">
+				<input class="palavra-digitada" type="text" id="text" onclick="transformarLetras()" placeholder="Digite uma palavra sem letra repetida" maxlength="8">
+			</section>
+			<div class="alerta">
+				<img src="img/Vector.svg">
+				<p class="alerta-mensagem">Máx. de 8 letras</p>
+			</div>
+			<section class="btns-adicionar-palavra">
+				<button class="btn-inicio-salvar" onclick="adicionarPalavra()">Salvar e começar</button>
+				<button class="btn-inicio-cancelar" onclick="alterarDaTela2ParaTela1()">Cancelar</button>
+			</section>
+		</div>
+
+		<!-- Tela 3 -->
+		<div id="tela3" class="invisivel">
+			<div class="canvas">
+				<canvas id="jogo-forca" height="650px" width="1200px"></canvas>
+			</div>
+			<section class="btns-novo-jogo">
+				<button class="btn-novo-jogo" onclick="atualizarPalavra()">Novo jogo</button>
+				<button class="btn-desistir" onclick="alterarParaTela1()">Desistir</button>
+			</section>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
