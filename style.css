@@ -1,0 +1,222 @@
+/* Tela 1 */
+
+:root {
+  --azul-claro-bt: #0d5cbd;
+  --cinza-escuro-btn: #d1d4e3;
+}
+
+body {
+  background: #F3F5FC;
+}
+
+.logo-alura {
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.btns-inicio {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.btn-inicio-jogo {
+  
+  width: 240px;
+  padding: 24px;
+  border-radius: 17px;
+  border: none;
+  background: #0A3871;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-inicio-jogo:hover {
+  background: var(--azul-claro-bt);
+}
+
+.btn-inicio-inserir {
+  
+  width: 240px;
+  padding: 24px;
+  background: #F3F5FC;
+  border-radius: 17px;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-inicio-inserir:hover {
+  background: var(--cinza-escuro-btn);
+}
+
+.rodape-author-email {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.author {
+  color: #021b3b;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nome-rodape {
+  color: #0A3871;
+}
+
+.email-rodape {
+  color: #606164;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.valor-email-rodape {
+  color: #818389;
+}
+
+
+/* Tela 2 */
+
+.campo1-input {
+  margin-top: 6%;
+  margin-left: 30%;
+}
+
+.palavra-digitada{
+  width: 29rem;
+  border: 0 none;
+  background-color: #F3F5FC;
+  color: #0A3871;
+  font-style: normal;
+  font-family: 'Inter', 'sans-serif';
+  font-size: 32px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder{
+  color:#0A3871;
+  font-family: 'Inter', 'sans-serif';
+  font-style: normal;
+  font-size: 26px;
+}
+
+.alerta {
+  display: flex;
+  margin-top: 15%;
+  margin-left: 30%;
+  align-items: center;
+}
+
+.alerta-mensagem {
+  margin-left: 0.8%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  color: #495057;
+  opacity: 0.8;
+}
+
+.btns-adicionar-palavra {
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.btn-inicio-salvar {
+  width: 275px;
+  padding: 18px;
+  border-radius: 17px;
+  border: none;
+  background: #0A3871;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-inicio-salvar:hover {
+  background: var(--azul-claro-bt);
+}
+
+.btn-inicio-cancelar {
+  margin-left: 2%;
+  width: 275px;
+  padding: 18px;
+  background: #F3F5FC;
+  border-radius: 17px;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-inicio-cancelar:hover {
+  background: var(--cinza-escuro-btn);
+}
+
+
+/* Tela 3 */
+
+.canvas {
+  display: flex;
+  justify-content: center;
+}
+
+.btns-novo-jogo {
+  margin-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+}
+
+.btn-novo-jogo {
+  width: 275px;
+  padding: 18px;
+  border-radius: 17px;
+  border: none;
+  background: #0A3871;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-novo-jogo:hover {
+  background: var(--azul-claro-bt);
+}
+
+.btn-desistir {
+  margin-left: 2%;
+  width: 275px;
+  padding: 18px;
+  background: #F3F5FC;
+  border-radius: 17px;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-desistir:hover {
+  background: var(--cinza-escuro-btn);
+}
+
+.invisivel {
+  display: none;
+}
